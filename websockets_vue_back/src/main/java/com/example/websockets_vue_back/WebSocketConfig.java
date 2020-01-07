@@ -20,7 +20,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/gs-guide-websocket")
                 .setAllowedOrigins("http://localhost:8081",
-                        "chrome-extension://ggnhohnkfcpcanfekomdkjffnfcjnjam")
+                        "chrome-extension://ggnhohnkfcpcanfekomdkjffnfcjnjam") //to use APIC extension for Chrome
                 .withSockJS();
     }
 
